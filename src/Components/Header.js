@@ -1,6 +1,10 @@
+import logo from '../Images/Logo.svg';
+
 function Header() {
     return (
-        <header></header>
+        <header>
+            <img src={logo}></img>
+        </header>
     );
 }
 

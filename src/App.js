@@ -11,7 +11,6 @@ function App() {
     <Nav></Nav>
     <Main></Main>
     <Footer></Footer>
-      Simple app
     </>
   );
 }
