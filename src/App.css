@@ -34,32 +34,179 @@ nav li a:hover {
     color: rgb(255, 230, 0);
 }
 .container {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 main section {
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
 }
 main article {
     flex: 1;
-    margin: 1rem;
     overflow: hidden;
     background-color: #495e57;
     border-radius: 16px;
     color: white;
-    padding: 10px;
+    flex-basis: 300px;
 }
 
-footer {
-    display: flex;
+.banner {
+    padding: 1rem 2rem;
 }
 
-footer div {
+#hero article {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://thefoodellers.com/wp-content/uploads/2019/05/pasta-pomodoro-recipe-italian-1024x768.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    width: 100%;
+    max-width: 270px;
+    height: 70px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+h1 {
+    font-size: 2rem;
+}
+
+#highlights {
+    padding: 4rem 0 0;
+}
+
+#highlights div {
     flex: 1;
-    margin: 1rem;
-    overflow: hidden;
+    flex-basis: 400px;
+}
+#highlights button {
+    display: block;
+    margin-left: auto;
+}
+
+#highlights2 article {
+    max-width: 500px;
+}
+
+.artText {
+    padding: 10px 20px;
+}
+#highlights2 article .artImg {
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
 }
 
 h1 span {
     float: right;
 }
+
+#highlights2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+#highlights2 a:hover{
+    color: grey;
+}
+
+.testTitle{
+    text-align: center;
+    padding: 4rem 0 0;
+}
+
+#testimonials article {
+    max-width: 500px;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px #495e57;
+    color: #495e57;
+}
+
+#testimonials img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testInfo div{
+    flex: 1;
+}
+
+.testInfo h3 {
+    text-align: center;
+}
+
+#about {
+    padding: 4rem 0;
+}
+
+#about article {
+    background-color: transparent;
+    color: #495e57;
+    border-radius: 0;
+}
+.aboutText {
+    padding: 0 2rem;
+}
+
+#about img {
+    width: 90%;
+    height: 30vh;
+    object-fit: cover;
+    padding: 2rem;
+}
+
+footer {
+    background-color: #495e57;
+    color: white;
+}
+
+footer > div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+}
+
+footer li {
+    margin-bottom: 1rem;
+}
+
+footer li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer li a:hover {
+    color: grey;
+}
+
+footer > div > div {
+    flex: 1;
+    max-width: 300px;
+    margin: 1rem;
+    overflow: hidden;
+    flex-basis: 300px;
+}
+
+

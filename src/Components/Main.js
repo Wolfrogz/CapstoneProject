@@ -7,73 +7,115 @@ function Main() {
         <main className="container">
             <section id="hero">
                 <article>
-                 <h1>The Little Lemon</h1>
-                 <h2>Chicago</h2>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a maximus dui. Nam vel mi at elit aliquet gravida non sit amet tortor. Nunc et sapien fringilla, sodales dui eget, volutpat nunc.</p>
-                 <button>Book a table</button>
+                    <div className='banner'>
+                        <h1>The Little Lemon</h1>
+                        <h2>Chicago</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a maximus dui. Nam vel mi at elit aliquet gravida non sit amet tortor. Nunc et sapien fringilla, sodales dui eget, volutpat nunc.</p>
+                        <button>Book a table</button>
+                    </div>
                 </article>
             </section>
             <section id="highlights">
-                <article>
+                <div>
                     <h1>Specials</h1>
-                </article>
-                <article>
+                </div>
+                <div>
                     <button>Full Menu</button>
-                </article>
+                </div>
             </section>
             <section id="highlights2">
                 <article>
-                    <img src={bruchetta} width="100%" height="185px"></img>
-                    <h1>Dish 1 <span>$10</span></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a maximus dui. Nam vel mi at elit aliquet gravida non sit amet tortor.</p>
-                    <button>Order</button>
+                        <img src={bruchetta} className='artImg' alt='bruchetta'></img>
+                    <div className='artText'>
+                        <h1>Dish 1 <span>$10</span></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a maximus dui. Nam vel mi at elit aliquet gravida non sit amet tortor.</p>
+                        <a href=''>Order</a>
+                    </div>
                 </article>
                 <article>
-                    <img src={greeksalad} width="100%" height="185px"></img>
-                    <h1>Dish 1 <span>$10</span></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a maximus dui. Nam vel mi at elit aliquet gravida non sit amet tortor.</p>
-                    <button>Order</button>
+                        <img src={greeksalad} className='artImg' alt='greeksalad'></img>
+                    <div className='artText'>
+                        <h1>Dish 1 <span>$10</span></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a maximus dui. Nam vel mi at elit aliquet gravida non sit amet tortor.</p>
+                        <a href=''>Order</a>
+                    </div>
                 </article>
                 <article>
-                    <img src={dessert} width="100%" height="185px"></img>
-                    <h1>Dish 1 <span>$10</span></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a maximus dui. Nam vel mi at elit aliquet gravida non sit amet tortor.</p>
-                    <button>Order</button>
+                        <img src={dessert} className='artImg' alt='dessert'></img>
+                    <div className='artText'>
+                        <h1>Dish 1 <span>$10</span></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a maximus dui. Nam vel mi at elit aliquet gravida non sit amet tortor.</p>
+                        <a href=''>Order</a>
+                    </div>
                 </article>
             </section>
-            <h1>Testimonials</h1>
+            <h1 className='testTitle'>Testimonials</h1>
             <section id="testimonials">
                 <article>
-                    <h1>Rating</h1>
-                    <img src={bruchetta} width="100px"></img>
-                    <span>Name</span>
-                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                    <div className='artText'>
+                        <h1>Rating</h1>
+                        <div className='testInfo'>
+                            <div>
+                                <img src={bruchetta} width="100px" alt='profile'></img>
+                            </div>
+                            <div>
+                                <h3>Name</h3>
+                            </div>
+                        </div>
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                    </div>
                 </article>
                 <article>
-                    <h1>Rating</h1>
-                    <img src={bruchetta} width="100px"></img>
-                    <span>Name</span>
-                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
-                </article><article>
-                    <h1>Rating</h1>
-                    <img src={bruchetta} width="100px"></img>
-                    <span>Name</span>
-                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
-                </article><article>
-                    <h1>Rating</h1>
-                    <img src={bruchetta} width="100px"></img>
-                    <span>Name</span>
-                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                    <div className='artText'>
+                        <h1>Rating</h1>
+                        <div className='testInfo'>
+                            <div>
+                                <img src={bruchetta} width="100px" alt='profile'></img>
+                            </div>
+                            <div>
+                                <h3>Name</h3>
+                            </div>
+                        </div>
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                    </div>
+                </article>
+                <article>
+                    <div className='artText'>
+                        <h1>Rating</h1>
+                        <div className='testInfo'>
+                            <div>
+                                <img src={bruchetta} width="100px" alt='profile'></img>
+                            </div>
+                            <div>
+                                <h3>Name</h3>
+                            </div>
+                        </div>
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                    </div>
+                </article>
+                <article>
+                    <div className='artText'>
+                        <h1>Rating</h1>
+                        <div className='testInfo'>
+                            <div>
+                                <img src={bruchetta} width="100px" alt='profile'></img>
+                            </div>
+                            <div>
+                                <h3>Name</h3>
+                            </div>
+                        </div>
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                    </div>
                 </article>
             </section>
             <section id="about">
-                <article>
+                <article className='aboutText'>
                     <h1>The Little Lemon</h1>
                     <h2>Chicago</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a maximus dui. Nam vel mi at elit aliquet gravida non sit amet tortor. Nunc et sapien fringilla, sodales dui eget, volutpat nunc.</p>
                 </article>
                 <article>
-                <img src={bruchetta}></img>
+                <img src={bruchetta} alt='about'></img>
                 </article>
             </section>
         </main>
