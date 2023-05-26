@@ -1,13 +1,18 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function BookingForm( props ) {
     const [date, setDate] = useState("");
     const [guests, setGuests] = useState("");
-    const [time, setTime] = useState("");
-    const [occasion, setOccasion] = useState("");
+    const [time, setTime] = useState("17:00");
+    const [occasion, setOccasion] = useState("Birthday");
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if(props.submitAPI(date, time, guests, occasion)){
+            navigate("/confirmed")
+        }
         setDate("");
         setTime("");
         setGuests("");
@@ -23,9 +28,10 @@ function BookingForm( props ) {
                 type:"time",
                 date: e.target.valueAsDate
                 })
+                console.log(window)
                 }}/>
             <label htmlFor="res-time">Choose time</label>
-            <select required id="res-time " value={time} onChange={e => setTime(e.target.value)}>
+            <select required id="res-time" value={time} onChange={e => setTime(e.target.value)}>
                 {props.availableTimes?.map((option, index) => (
                     <option key={index} value={option}>{option}</option>
                 ))}
