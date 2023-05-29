@@ -5,22 +5,22 @@ function Nav() {
         <nav>
             <ul>
                 <li>
-                    <Link to='/'>Home</Link>
+                    <Link aria-label='Home' to='/'>Home</Link>
                 </li>
                 <li>
-                    <Link to='/about'>About</Link>
+                    <Link aria-label='About' to='/'>About</Link>
                 </li>
                 <li>
-                    <Link to='/menu'>Menu</Link>
+                    <Link aria-label='Menu' to='/'>Menu</Link>
                 </li>
                 <li>
-                    <Link to='/reservations'>Reservations</Link>
+                    <Link aria-label='Reservations' to='/reservations'>Reservations</Link>
                 </li>
                 <li>
-                    <Link to='/order'>Order Online</Link>
+                    <Link aria-label='Order Online' to='/'>Order Online</Link>
                 </li>
                 <li>
-                    <Link to='/login'>Login</Link>
+                    <Link aria-label='Login' to='/'>Login</Link>
                 </li>
             </ul>
         </nav>

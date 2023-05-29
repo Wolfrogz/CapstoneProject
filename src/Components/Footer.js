@@ -1,4 +1,4 @@
-import logo from '../Images/Logo.svg';
+import logo from '../Images/Logo2.png';
 
 function Footer() {
     return (
@@ -11,22 +11,22 @@ function Footer() {
                     <h2>Doormat Nav</h2>
                     <ul>
                         <li>
-                            <a href="">Home</a>
+                            <a aria-label='Home' href="">Home</a>
                         </li>
                         <li>
-                            <a href="">About</a>
+                            <a aria-label='About' href="">About</a>
                         </li>
                         <li>
-                            <a href="">Menu</a>
+                            <a aria-label='Menu' href="">Menu</a>
                         </li>
                         <li>
-                            <a href="">Reservations</a>
+                            <a aria-label='Reservations' href="">Reservations</a>
                         </li>
                         <li>
-                            <a href="">Order Online</a>
+                            <a aria-label='Order Online' href="">Order Online</a>
                         </li>
                         <li>
-                            <a href="">Login</a>
+                            <a aria-label='Login' href="">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -34,22 +34,29 @@ function Footer() {
                     <h2>Contact</h2>
                     <ul>
                         <li>
-                            <a href="">Address</a>
+                            <a aria-label='Address' href="">Address</a>
                         </li>
                         <li>
-                            <a href="">Phone Number</a>
+                            <a aria-label='Phone Number' href="">Phone Number</a>
                         </li>
                         <li>
-                            <a href="">Email</a>
+                            <a aria-label='Email' href="">Email</a>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <h2>Social media</h2>
-                    <img src={logo} width="40px"></img>
-                    <img src={logo} width="40px"></img>
-                    <img src={logo} width="40px"></img>
-                    <img src={logo} width="40px"></img>
+                    <div class="social-icons">
+  <a href="#"  title="facebook">
+    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+  </a>
+  <a href="#" title="twitter">
+    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+  </a>
+  <a href="#" title="instagram">
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+  </a>
+</div>
                 </div>
                 </div>
         </footer>

@@ -1,9 +1,13 @@
 import logo from '../Images/Logo.svg';
+import Nav from './Nav';
 
 function Header() {
     return (
         <header>
-            <img src={logo}></img>
+            <div className="container">
+                <img src={logo}></img>
+                <Nav></Nav>
+            </div>
         </header>
     );
 }

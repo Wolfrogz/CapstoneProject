@@ -1,6 +1,13 @@
+import image from '../Images/mario.jpg'
+
 function ConfirmedBooking() {
     return(
-        <h1>Booking complete</h1>
+        <main className="container" id="confirmed">
+            <h1>¡Booking complete!</h1>
+            <h2>Thank you for prefering us!</h2>
+            <p>Check your email for more info</p>
+            <img src={image}></img>
+        </main>
     );
 }
 
